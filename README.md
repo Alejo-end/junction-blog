@@ -4,18 +4,6 @@
 
 ## 👉 Check out the ✨ [Live Demo](https://astro-blog-template.netlify.app/) ✨
 
-## 👩‍🚀 Getting Started
-
-### Locally
-
-```
-npm init astro -- --template Charca/astro-blog-template
-```
-
-### On StackBlitz
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/charca/astro-blog-template)
-
 ## ✨ Features:
 
 - ✅ Astro 1.0
@@ -59,6 +47,5 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
 
-## 👀 Want to learn more?
+## Create by the Greeeen Boys.
 
-Feel free to check [Astro's documentation](https://github.com/withastro/astro) or jump into Astro's [Discord server](https://astro.build/chat).
