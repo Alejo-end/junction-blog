@@ -4,7 +4,7 @@ This blog is built using the development fundamentals of Green Coding that assur
 
 ![image](https://user-images.githubusercontent.com/63655402/200152511-2fea3630-1da7-4d97-a9bf-943b4bfab74d.png)
 
-## 👉 Check out the ✨ [Live Demo](https://astro-blog-template.netlify.app/) ✨
+## 👉 Check out the ✨ [Live Demo](https://dashing-tarsier-069ded.netlify.app/) ✨
 
 ## ✨ Features:
 
