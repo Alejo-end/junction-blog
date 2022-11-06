@@ -6,23 +6,31 @@ const description = 'The perfect starter for your perfect blog.';
 const permalink = Astro.site.href;
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink}>
-  <div class="home-container">
-    <div class="home-copy">
-      <h1>Welcome to the  Climate Friendly Newsfeed.</h1>
-      <p>This blog is based on development fundamentals on Green Coding that assure more sustainable development and therefore less energy used to serve this site.</p>
-    </div>
+<BaseLayout title={title} description={description} permalink={permalink} current="newsfeed">
+  <div class="container">
+    <h1>Newsfeed</h1>
+      const href = "https://yle.fi/uutiset/74-20003314";
+      return (
+        <div>
+          <div class="post-item">
+            <h2>
+              <a href={'https://yle.fi/uutiset/74-20003314'}>https://yle.fi/uutiset/74-20003314</a>
+            </h2>
+            <img src="../../../public/assets/sanna.png" alt="Illustration of a notebook" width="500" class="astro-3QUDTWXS">
+            <p>
+            Pääministeri Sanna Marin lähtee ehdokkaaksi ensi kevään eduskuntavaaleihin Pirkanmaan listalta. Pirkanmaan Sosialidemokraattien piirihallitus kertoi asiasta keskiviikkoiltana. Marin kertoi Ylelle aikeistaan lähteä ehdolle Pirkanmaalta jo pääministerin haastattelutunnilla 23. lokakuuta.
 
-    <div class="hero-image-container">
-      <picture>
-        <source class="br-round" srcset="/assets/hands.webp" media="(min-width: 600px)">
-        <img class="hero-image" alt="Illustration of hands" src="/assets/hands.webp" width="550" height="466">
-      </picture>
-      <p class="caption">
-        Illustrations by
-        <a href="https://www.freepik.com/" target="_blank" rel="noopener">FreePik</a>.
-      </p>
-    </div>
+SDP on aiemmin syksyllä asettanut Pirkanmaalla 17 ehdokasta. Sanna Marinin päätöstä vaalipiirissä on odotettu jo pidempään.
+
+Spekulaatiota Sanna Marinin ehdokkuudesta on käyty jo aiemmin syksyllä mediassa. Hän olisi voinut asettua ehdokkaaksi Pirkanmaan sijasta myös Uudenmaan tai Helsingin listoilla, koska näillä paikkakunnilla on jaossa paljon kansanedustajan paikkoja.
+
+Lauri Lyly on ollut toinen Pirkanmaan ääniharavoista. Hän ei ole listoilla vieläkään. SDP aikoo täyttää kaksi viimeistä ehdokaspaikkaa marraskuun aikana.
+            </p>
+            <div class="post-item-footer">
+              <span class="post-item-date">— 05/11/22</span>
+            </div>
+          </div>
+        </div>
   </div>
 </BaseLayout>
 
