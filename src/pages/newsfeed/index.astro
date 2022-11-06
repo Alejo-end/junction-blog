@@ -19,7 +19,6 @@ const posts = await fetch('http://192.168.34.77:3000/rss', {
 const data = await fetch('http://192.168.34.77:3000/rss').then((response) =>
   response.json()
 );
-console.log('blogs', data);
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink} current="newsfeed">
@@ -42,6 +41,7 @@ console.log('blogs', data);
         </div>
       )
     })}
+    {data.items}
   </div>
 </BaseLayout>
 
