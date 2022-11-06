@@ -1,6 +1,8 @@
-# [Astro](https://astro.build) Blog Template
+# [Astro](https://astro.build) Climate Friendly Newsfeed
 
-[![Screenshot](![image])(https://user-images.githubusercontent.com/63655402/200152485-51bdd937-56e4-44f2-a275-725b3d9b125c.png)]
+This blog is built using the development fundamentals of Green Coding that assure more sustainable development and therefore the least possible energy used to serve this website.
+
+![image](https://user-images.githubusercontent.com/63655402/200152511-2fea3630-1da7-4d97-a9bf-943b4bfab74d.png)
 
 ## 👉 Check out the ✨ [Live Demo](https://astro-blog-template.netlify.app/) ✨
 
