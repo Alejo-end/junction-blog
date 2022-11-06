@@ -16,9 +16,9 @@ const posts = await fetch('http://192.168.34.77:3000/rss', {
   },
   body: JSON.stringify({ urls }),
 }); */
-const data = await fetch('http://192.168.34.77:3000/rss').then((response) =>
+/* const data = await fetch('http://192.168.34.77:3000/rss').then((response) =>
   response.json()
-);
+); */
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink} current="newsfeed">
@@ -41,7 +41,6 @@ const data = await fetch('http://192.168.34.77:3000/rss').then((response) =>
         </div>
       )
     })}
-    {data.items}
   </div>
 </BaseLayout>
 
