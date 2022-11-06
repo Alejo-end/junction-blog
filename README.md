@@ -1,6 +1,6 @@
 # [Astro](https://astro.build) Blog Template
 
-[![Screenshot](screenshot.png)](https://astro-blog-template.netlify.app/)
+[![Screenshot](![image](https://user-images.githubusercontent.com/63655402/200152485-51bdd937-56e4-44f2-a275-725b3d9b125c.png)]
 
 ## 👉 Check out the ✨ [Live Demo](https://astro-blog-template.netlify.app/) ✨
 
