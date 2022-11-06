@@ -1,17 +1,30 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const title = 'Blog';
+const title = 'Newsfeed';
 const description = 'Latest articles.';
 const permalink = `${Astro.site.href}blog`;
 
 let allPosts = await Astro.glob('../../data/blog-posts/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+/* // do a post request to the api to get the posts with the urls of the news pages to fetch
+const urls = ['https://www.iltalehti.fi/rss/uutiset.xml']
+const posts = await fetch('http://192.168.34.77:3000/rss', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({ urls }),
+}); */
+const data = await fetch('http://192.168.34.77:3000/rss').then((response) =>
+  response.json()
+);
+console.log('blogs', data);
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink} current="blog">
+<BaseLayout title={title} description={description} permalink={permalink} current="newsfeed">
   <div class="container">
-    <h1>Blog</h1>
+    <h1>Newsfeed</h1>
     {allPosts.map((post, index) => {
       const href = `/blog/${post.file.split('/').pop().split('.').shift()}`;
       return (
